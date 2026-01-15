@@ -16,8 +16,8 @@
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">
-                <span class="logo-symbol">PSG</span>
-                <span class="logo-text">Psychotherapy<br>Supervision Group</span>
+                <span class="logo-symbol">PS</span>
+                <span class="logo-text">Psychotherapy<br>Supervision</span>
             </a>
             <button class="mobile-toggle" aria-label="Toggle navigation">
                 <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -34,22 +34,26 @@
     </header>
 
     <main>
-        <div class="header-spacer" style="height: var(--header-height);"></div>
+        <div style="height: var(--header-height);"></div>
 
-        <section class="section bg-light">
+        <section class="section" style="background-color: var(--bg-body);">
             <div class="container">
-                <div class="section-header text-center">
+                <div class="section-header text-center fade-in-up">
                     <span class="section-badge">Our Method</span>
                     <h1 class="section-title">Indispensable Supervision</h1>
                     <p class="section-subtitle">We view supervision as a tripartite process essential for ethical
                         practice.</p>
+                    <div style="margin: 2rem auto; max-width: 600px;" class="fade-in-up">
+                        <img src="round-table-sketch.png" alt="Sketch of professional round table discussion"
+                            style="width: 100%; border-radius: var(--radius-sm); mix-blend-mode: multiply; opacity: 0.9;">
+                    </div>
                 </div>
 
                 <div class="services-grid">
-                    <div class="service-card">
+                    <div class="service-card fade-in-up">
                         <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="12" cy="7" r="4"></circle>
                             </svg>
@@ -59,10 +63,10 @@
                             in introspection and reflection on one's own work.</p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.1s;">
                         <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                                 <circle cx="9" cy="7" r="4"></circle>
                                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -74,10 +78,10 @@
                             perspectives and gain insights from colleagues.</p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card fade-in-up" style="transition-delay: 0.2s;">
                         <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                                 <line x1="8" y1="21" x2="16" y2="21"></line>
                                 <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -92,10 +96,11 @@
         </section>
 
         <!-- CTA -->
-        <section class="section">
-            <div class="container text-center">
-                <h2>Join the Academic Discussion</h2>
-                <p style="margin: 1rem 0 2rem; color: var(--text-muted);">Contact the moderator for invitation requests.
+        <section class="section" style="background: white;">
+            <div class="container text-center fade-in-up">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Join the Academic Discussion</h2>
+                <p style="margin: 0rem 0 2.5rem; color: var(--text-muted); font-size: 1.1rem;">
+                    Contact the moderator for invitation requests.
                 </p>
                 <a href="contact.html" class="btn btn-primary">Contact Moderator</a>
             </div>
@@ -106,7 +111,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-text">Psychotherapy<br>Supervision</span>
+                    <span>Psychotherapy Supervision</span>
                     <p>&copy; 2024. All rights reserved.</p>
                 </div>
                 <div class="footer-links">

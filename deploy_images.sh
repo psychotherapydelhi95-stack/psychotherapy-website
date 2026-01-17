@@ -12,7 +12,7 @@ cp /Users/ng/.gemini/antigravity/brain/1c8e9806-310f-424f-b6af-9b86927a41ff/acad
 # Git operations to deploy
 cd /Users/ng/psychotherapy-website
 git add .
-git commit -m "Update services page with neutral group therapy image"
+git commit -m "Update homepage hero image to academic setting"
 git push
 
 echo "Done! Changes should be live on www.psychotherapysupervision.co.in shortly."

@@ -31,7 +31,7 @@
     }
     </script>
 
-    <!-- Specific styles for YouTube navigation item and video card section -->
+    <!-- Navigation & Video Grid Styling -->
     <style>
         .yt-nav-link {
             display: inline-flex;
@@ -69,11 +69,17 @@
             display: flex;
             flex-direction: column;
             border: 1px solid rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
         }
 
         .video-embed-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
             background-color: #000;
@@ -96,15 +102,16 @@
         }
 
         .video-title {
-            font-size: 1.15rem;
+            font-size: 1.12rem;
             font-weight: 600;
             margin: 0 0 0.5rem 0;
             color: var(--text-color, #1a1a1a);
+            line-height: 1.4;
         }
 
         .video-desc {
-            font-size: 0.95rem;
-            line-height: 1.5;
+            font-size: 0.92rem;
+            line-height: 1.55;
             color: var(--text-muted, #555555);
             margin: 0;
             flex-grow: 1;
@@ -176,9 +183,9 @@
         <section id="youtube-videos" class="section" style="background-color: #fbfbfb; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;">
             <div class="container text-center">
                 <span class="section-badge" style="color: #cc0000; border-color: rgba(204, 0, 0, 0.2);">YouTube Channel</span>
-                <h2 class="section-title">Clinical Supervision & Case Discussions</h2>
-                <p style="max-width: 650px; margin: 0 auto; color: var(--text-muted);">
-                    Watch recorded clinical discussions, training guidance, and practice strategies from Dr. Naveen Grover.
+                <h2 class="section-title">Clinical Supervision & Case Guidance</h2>
+                <p style="max-width: 680px; margin: 0 auto; color: var(--text-muted);">
+                    Curated practical guidance, supervision sessions, and clinical technique discussions by Dr. Naveen Grover.
                 </p>
 
                 <div class="video-grid">
@@ -187,14 +194,14 @@
                         <div class="video-embed-container">
                             <iframe 
                                 src="https://www.youtube.com/embed/aypPiE2xRrA" 
-                                title="Cognitive Restructuring Technique"
+                                title="Cognitive Restructuring Technique" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen>
                             </iframe>
                         </div>
                         <div class="video-content">
                             <h3 class="video-title">Cognitive Restructuring Technique</h3>
-                            <p class="video-desc">A structured walkthrough of cognitive restructuring applications in practice, focusing on reframing cognitive distortions systematically.</p>
+                            <p class="video-desc">Step-by-step clinical walkthrough of the cognitive restructuring technique in psychotherapy practice, demonstrating how to identify, examine, and reframe dysfunctional automatic thoughts.</p>
                         </div>
                     </div>
 
@@ -203,14 +210,14 @@
                         <div class="video-embed-container">
                             <iframe 
                                 src="https://www.youtube.com/embed/KmRTtvE3vb8" 
-                                title="Threatening Client - Precautions"
+                                title="Threatening Client - Precautions" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen>
                             </iframe>
                         </div>
                         <div class="video-content">
                             <h3 class="video-title">Threatening Client: Safety & Precautions</h3>
-                            <p class="video-desc">Clinical protocols and risk management guidance when managing aggressive or threatening behaviors within therapy sessions.</p>
+                            <p class="video-desc">Essential clinical and ethical precautions when handling threatening or potentially violent clients in psychotherapy sessions, focusing on risk assessment and therapist safety protocols.</p>
                         </div>
                     </div>
 
@@ -219,21 +226,69 @@
                         <div class="video-embed-container">
                             <iframe 
                                 src="https://www.youtube.com/embed/JrjmWXP_psQ" 
-                                title="Therapist in Crisis"
+                                title="Therapist in Crisis" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen>
                             </iframe>
                         </div>
                         <div class="video-content">
                             <h3 class="video-title">Therapist in Crisis</h3>
-                            <p class="video-desc">Crucial supervision perspectives on handling therapist burnout, sudden personal distress, and maintaining professional boundaries.</p>
+                            <p class="video-desc">Discussion exploring situations where a therapist faces acute personal or professional crises, highlighting the role of peer supervision, self-care boundaries, and consultation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="video-card fade-in-up">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/bW8w9Kx9o04" 
+                                title="Resistance in Psychotherapy" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title">Working with Resistance in Psychotherapy</h3>
+                            <p class="video-desc">Supervisory perspectives on recognizing and working through therapeutic resistance, exploring its psychological origins, and reframing obstacles into clinical breakthroughs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="video-card fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/MhL9K8k_L3A" 
+                                title="Supervision Essentials" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title">Core Competencies in Clinical Supervision</h3>
+                            <p class="video-desc">Key principles of establishing a reflective supervisory alliance, balancing constructive evaluation with developmental mentoring for trainees and early-career practitioners.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div class="video-card fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/K8Nve9XoPrQ" 
+                                title="Boundary Violations and Ethics" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title">Ethics, Dual Relationships & Boundaries</h3>
+                            <p class="video-desc">Examination of complex ethical dilemmas, setting clear interpersonal boundaries in counseling, and managing transference/countertransference dynamics responsibly.</p>
                         </div>
                     </div>
                 </div>
 
-                <div style="margin-top: 3rem;">
-                    <a href="https://www.youtube.com/@DrNaveenGrover" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: #cc0000; border-color: #cc0000;">
-                        Visit @DrNaveenGrover on YouTube
+                <div style="margin-top: 3.5rem;">
+                    <a href="https://www.youtube.com/@DrNaveenGrover" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: #cc0000; border-color: #cc0000; font-weight: 600; padding: 12px 28px;">
+                        Subscribe & Watch More on @DrNaveenGrover
                     </a>
                 </div>
             </div>

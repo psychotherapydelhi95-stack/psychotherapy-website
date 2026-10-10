@@ -32,7 +32,6 @@
     </script>
 
     <style>
-        /* Navigation styling for YouTube Tab */
         .yt-nav-link {
             display: inline-flex;
             align-items: center;
@@ -53,12 +52,20 @@
             flex-shrink: 0;
         }
 
-        /* Video Section Grid & Cards */
+        .channel-featured-player {
+            max-width: 900px;
+            margin: 2.5rem auto 3.5rem auto;
+            background: #ffffff;
+            border-radius: var(--radius-md, 10px);
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
-            margin-top: 2.5rem;
+            margin-top: 2rem;
             text-align: left;
         }
 
@@ -194,12 +201,170 @@
                 <span class="section-badge" style="color: #cc0000; border-color: rgba(204, 0, 0, 0.2);">YouTube Channel</span>
                 <h2 class="section-title">Clinical Supervision & Training Videos</h2>
                 <p style="max-width: 680px; margin: 0 auto; color: var(--text-muted);">
-                    Practical guidance, supervision discussions, and case reflections from Dr. Naveen Grover.
+                    Core psychological skills and supervision discussions by Dr. Naveen Grover (@DrNaveenGrover).
                 </p>
 
-                <!-- Dynamic Grid Loaded by JavaScript -->
-                <div id="channel-video-grid" class="video-grid">
-                    <p style="grid-column: 1 / -1; color: var(--text-muted); font-size: 1.05rem;">Loading videos from Dr. Naveen Grover's channel...</p>
+                <!-- Full Channel Uploads Playlist Player (Contains all uploads in order) -->
+                <div class="channel-featured-player">
+                    <div class="video-embed-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/videoseries?list=UUTJDAkRVdIMeouOjX95xJqQ" 
+                            title="Dr Naveen Grover - Clinical Supervision & Training (All Channel Videos)" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-content" style="text-align: left;">
+                        <h3 class="video-title" style="margin-bottom: 0.25rem;">Channel Playlist: Complete Video Library</h3>
+                        <p class="video-desc">Browse and play all uploaded clinical supervision and training sessions directly through the playlist menu in the top-right corner of the video player.</p>
+                    </div>
+                </div>
+
+                <!-- Individual Video Sessions -->
+                <div class="video-grid">
+                    <!-- Video 1: Omnipotence Rule -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/V-FFm8Ln5Ms" 
+                                title="Omnipotence Rule" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=V-FFm8Ln5Ms" target="_blank" rel="noopener noreferrer">Omnipotence Rule</a></h3>
+                            <p class="video-desc">Managing high client arousal, handling expectations of being the omnipotent troubleshooter, and practicing de-escalation skills in professional interactions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 2: Threatening Client -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/KmRTtvE3vb8" 
+                                title="Threatening Client" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=KmRTtvE3vb8" target="_blank" rel="noopener noreferrer">Threatening Client</a></h3>
+                            <p class="video-desc">Precautions for safety and how not to get riled up by accusations by the client. Avoiding defensive mode, maintaining exit roots, and continuing if safety permits.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 3: How to Learn Skills -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/VZAFdbkBiqk" 
+                                title="How to Learn Skills" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=VZAFdbkBiqk" target="_blank" rel="noopener noreferrer">How to Learn Skills</a></h3>
+                            <p class="video-desc">Comprehensive discussion on how beginner trainees should develop microskills, draft practice response scripts, and handle supervision feedback effectively.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 4: Cognitive Restructuring Technique -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/aypPiE2xRrA" 
+                                title="Cognitive Restructuring Technique" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=aypPiE2xRrA" target="_blank" rel="noopener noreferrer">Cognitive Restructuring Technique</a></h3>
+                            <p class="video-desc">What to say to avoid arguments and respect the client's observations. Clarifying what cognitive restructuring is in clinical practice versus simple disputation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 5: Initial follow-up: For Trainees -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/6qlIFkVQiQQ" 
+                                title="Initial follow-up: For Trainees" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=6qlIFkVQiQQ" target="_blank" rel="noopener noreferrer">Initial follow-up: For Trainees</a></h3>
+                            <p class="video-desc">A glimpse into OPD follow-up training for beginner trainees. Medication compliance assessment, distinguishing family tree from personal tree, and structured review.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 6: Therapist in Crisis -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/JrjmWXP_psQ" 
+                                title="Therapist in Crisis" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=JrjmWXP_psQ" target="_blank" rel="noopener noreferrer">Therapist in Crisis</a></h3>
+                            <p class="video-desc">Clinical supervision dialogue addressing personal distress, therapist emotional vulnerability, and navigating crisis situations while maintaining clinical presence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 7: Handling First Session -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/yLahS9pjTtw" 
+                                title="Handling First Session" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=yLahS9pjTtw" target="_blank" rel="noopener noreferrer">Handling First Session</a></h3>
+                            <p class="video-desc">Key principles of structuring intake and initial clinical interviews, setting boundaries, and creating an empathetic therapeutic space.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 8: Basic Skills -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/XA3aS1p5cAc" 
+                                title="Basic Skills" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=XA3aS1p5cAc" target="_blank" rel="noopener noreferrer">Basic Skills</a></h3>
+                            <p class="video-desc">Foundational skills in clinical psychology and psychotherapy practice embedded in psychosocial factors and real-world clinical application.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video 9: Book se Pare -->
+                    <div class="video-card">
+                        <div class="video-embed-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/pNy5ge1Oc50" 
+                                title="Book se Pare" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-content">
+                            <h3 class="video-title"><a href="https://www.youtube.com/watch?v=pNy5ge1Oc50" target="_blank" rel="noopener noreferrer">Book se Pare</a></h3>
+                            <p class="video-desc">Moving beyond textbook theory into practical clinical realities, nuance, and contextual adaptation during psychotherapy supervision.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -298,68 +463,6 @@
         </div>
     </footer>
 
-    <!-- Script to dynamically load all videos from channel UCTJDAkRVdIMeouOjX95xJqQ -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const channelId = "UCTJDAkRVdIMeouOjX95xJqQ";
-            const feedUrl = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D${channelId}`;
-
-            fetch(feedUrl)
-                .then(response => response.json())
-                .then(data => {
-                    const grid = document.getElementById("channel-video-grid");
-                    if (!data.items || data.items.length === 0) {
-                        grid.innerHTML = '<p style="grid-column: 1 / -1; color: var(--text-muted);">No videos currently available.</p>';
-                        return;
-                    }
-
-                    grid.innerHTML = data.items.map(item => {
-                        // Extract video ID from URL (e.g., https://www.youtube.com/watch?v=VIDEO_ID)
-                        let videoId = "";
-                        if (item.link.includes("v=")) {
-                            videoId = item.link.split("v=")[1].split("&")[0];
-                        } else if (item.guid && item.guid.includes("video:")) {
-                            videoId = item.guid.split("video:")[1];
-                        }
-
-                        // Clean HTML tags from description and provide a brief preview
-                        const cleanDesc = item.description 
-                            ? item.description.replace(/<\/?[^>]+(>|$)/g, "").trim()
-                            : "";
-                        const shortDesc = cleanDesc.length > 200 
-                            ? cleanDesc.substring(0, 200) + "..." 
-                            : cleanDesc;
-
-                        return `
-                            <div class="video-card">
-                                <div class="video-embed-container">
-                                    <iframe 
-                                        src="https://www.youtube.com/embed/${videoId}" 
-                                        title="${item.title}" 
-                                        loading="lazy"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <div class="video-content">
-                                    <h3 class="video-title">
-                                        <a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.title}</a>
-                                    </h3>
-                                    <p class="video-desc">${shortDesc || "Clinical training and supervision guidance."}</p>
-                                </div>
-                            </div>
-                        `;
-                    }).join("");
-                })
-                .catch(err => {
-                    console.error("Error loading YouTube videos:", err);
-                    const grid = document.getElementById("channel-video-grid");
-                    if (grid) {
-                        grid.innerHTML = '<p style="grid-column: 1 / -1; color: var(--text-muted);">Unable to load videos right now. Please refresh the page.</p>';
-                    }
-                });
-        });
-    </script>
     <script src="script.js"></script>
 </body>
 
